@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+      <link rel="shortcut icon" type="image/x-icon" href="..\MEDIAS\icone.png"/>
+      <link rel="stylesheet" type="text/css" href="..\CSS\ACCUEIL.css">
+	  <title>IZZY WEB (Tableaux)</title>
+    </head>
+    
+    <body>
+    
+        <header>
+        	<h1 name="grostitre">IZZY WEB<h1>
+        	<a href="ACCUEIL.html#INDEX"><img src="..\MEDIAS\menu.png" alt="Veuillez mettre à jour votre navigateur." title="Retourner à l'INDEX."/></a>
+        </header>
+
+<h1 name="titre">- LES TABLEAUX</h1>
+  <h2>-Les règles.</h2>
+
+  <p name="doc">Le tableau est encadré par les balises &lt;TABLE&gt; et &lt;/TABLE&gt;. Le titre du tableau est encadré par &lt;CAPTION&gt; &lt;/CAPTION&gt;. Chaque ligne est encadrée par &lt;TR&gt; &lt;/TR&gt; (Table Row, traduisez par ligne du tableau). Les cellules d'en-tête sont encadrées par &lt;TH&gt; &lt;/TH&gt; (pour Table Header : En-tête de tableau). Enfin, les cellules de valeur sont encadrées par &lt;TD&gt; &lt;/TD&gt; (Table Data: Donnée de tableau). On peut aussi ajouter un pied au tableau, encadré par &lt;TF&gt; &lt;/TF&gt;</p>  
+
+          <p> Voilà ce qu'on obtient.</p>
+      <table>
+            <caption ><strong><em><h1>Titre</h1></em></strong></caption><!--caption-side="bottom" permet de positionner le caption ou on veut-->
+      
+
+        <!--<td><p>Une data<p></td>-->
+        <thead>
+        <tr>
+            <th>nom</th>
+            <th>prénom</th>
+            <th>age</th>
+            <th>pays</th>
+      </tr>
+        </thead>
+
+
+        <tfoot><!--pied de tableau-->
+            <th>nom</th>
+            <th>prénom</th>
+            <th>age</th>
+            <th>pays</th>            
+        </tfoot>
+
+
+        <tbody>
+        <tr>
+            <td>Lamarre</td>
+            <td>Benoît</td>
+            <td>18</td>
+            <td>France</td>
+        </tr>
+        </tbody>
+
+      </table>
+
+
+<h2>-Attributs utiles.</h2>
+
+    <p name="doc">Si l'on souhaite afficher les bordures de notre tableau il suffit d'y ajouter l'attribut BORDER=<em>taille des bordures</em>. On peut aussi définir la largeur des cellules avec l'attribut WIDTH=<em>largeur en %</em>.
+
+          <p> Voilà ce qu'on obtient avec un width de 30%.</p>
+           <table border=1 width=30%>
+            <caption ><strong><em><h1>Titre</h1></em></strong></caption><!--caption-side="bottom" permet de positionner le caption ou on veut-->
+      
+        <!--<td><p>Une data<p></td>-->
+        <thead>
+        <tr>
+            <th>nom</th>
+            <th>prénom</th>
+            <th>age</th>
+            <th>pays</th>
+      </tr>
+        </thead>
+
+
+        <tfoot><!--pied de tableau-->
+            <th>nom</th>
+            <th>prénom</th>
+            <th>age</th>
+            <th>pays</th>            
+        </tfoot>
+
+
+        <tbody>
+        <tr>
+            <td>Lamarre</td>
+            <td>Benoît</td>
+            <td>18</td>
+            <td>France</td>
+        </tr>
+        </tbody>
+
+      </table>
+
+
+<p name="doc">On peut modifier la disposition des différentes cellules grâce aux attributs COSPLAN=nombre_de_cellule ROWSPAN=nombre_de_cellule. COSPLAN définit le nombre de cellules fusionées sur une ligne tandis que ROWSPAN définit le nombre de cellules fusionées en colonne.</p>
+
+      <img name="etape" src="..\MEDIAS\table.png" alt="Veuillez mettre votre navigateur à jour."  title="Balise Form "/>
+          <p> Voilà ce qu'on obtient.</p>
+
+
+  <TABLE width=60% border=1>
+    <caption ><strong><em><h1>Tableau LV2</h1></em></strong></caption>
+
+      <TR>
+        <TH colspan=4><Strong><p>Grande cellule</p></Strong>  </Th>
+      </TR>
+
+      <TR>
+        <TD width="25%" rowspan=4>cellule1</TD><TD width=25%>cel. 2</TD>
+        <td width="25%">3</td>
+        <td rowspan=3>4</td>
+      </TR>
+
+      <TR>
+        <TD width=25%>cellule1</TD><TD width=25%>cel. 2</TD>
+      </TR>
+
+      <TR>
+        <TD width=25%>cellule1</TD><TD width=25%>cel. 2</TD>
+      </TR>
+
+      <TR>
+        <TD colspan=3>cellule1</TD>
+      </TR>
+
+  </TABLE>
+
+
+    <a name="fleche" href="Table.html"><img name="fleche" src="..\MEDIAS\retour.png" alt="Veuillez mettre à jour votre navigateur." title="Retour"/></a>
+
+    </body>
+</html>

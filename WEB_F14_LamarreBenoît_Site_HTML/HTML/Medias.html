@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+      <link rel="shortcut icon" type="image/x-icon" href="..\MEDIAS\icone.png"/>
+      <link rel="stylesheet" type="text/css" href="..\CSS\ACCUEIL.css">
+	  <title>IZZY WEB (MEDIA)</title>
+    </head>
+    
+    <body>
+    
+        <header>
+        	<h1 name="grostitre">IZZY WEB<h1>
+        	<a href="ACCUEIL.html#INDEX"><img src="..\MEDIAS\menu.png" alt="Veuillez mettre à jour votre navigateur." title="Retourner à l'INDEX."/></a>
+        </header>
+
+<h1 name="titre">-LES IMAGES</h1>
+
+  <h2>-Les formats d'images.</h2>
+
+
+  <p name="doc">Ils existe plusieurs formats d'image les "jpeg", JPEG est l’acronyme de Joint Photographic Experts Group c'est un format qui comporte 16 millions de couleurs différents.<br>
+Le format "png"(portable network graphics) est le format le plus récent, l’image peut être transparente sans être altérée.Le format "png" a été créé pour remplacer le format GIF, c'est un format sans perte spécialement adapté pour publier des images simples comprenant des aplats de couleurs.<br>
+La compression des "jpeg" est plus puissante donc on privilégie ces formats pour les images et photos.<br>
+Le format d’image animée, les "gif". Le Graphics Interchange Format, plus connu sous l'acronyme "GIF", est un format d'image numérique couramment utilisé sur le web
+Une caractéristique rare du GIF est le nombre de couleurs supportées : au maximum 256 car chaque pixel est représenté sur 8 bits, contrairement à des formats en 64 bits, qui eux peuvent afficher plus de 16 millions de couleurs. </p>
+
+<img src="..\MEDIAS\GIF.gif" alt="on rigole bien" title="Un gif."/>
+<img src="..\MEDIAS\chaton.jpg" alt="Veuillez mettre votre navigateur à jour." title="Une photo en format jpeg."/>
+<img src="..\MEDIAS\mario.png" alt="lien miniature" title="Une image en format png."/>
+
+
+  <h2>-Afficher une image.</h2>
+
+
+  <p name="doc"> La balise permettant d'afficher une image est la balise "img" elle doit être accompagnée de l'attribut "src" qui lui indique la source de l'image.<p>
+<img name="etape" src="..\MEDIAS\ExempleImg.png" alt="Veuillez mettre votre navigateur à jour." title="Une photo en format jpeg."/>
+  <p name="doc"> Comme cela, l'attribut "alt" vous permet d'afficher un message si l'image n'arrive pas à charger, l'attribut "title" quand à lui permet d'afficher une infobulle quand la souris de l'utilisateur passe sur l'image.</p>
+
+
+<h1 name="titre">-LES VIDEOS ET MUSIQUES</h1>
+
+  <h2>-La musique ! </h2>
+
+
+  <p name="doc">S’il y a encore quelques temps il était assez compliqué de lire un fichier audio ou mp3 depuis votre site web, le HTML5 à simplifié sa mise en place. A partir d’une simple balise à insérer dans votre page web, la lecture de votre fichier musicale s’effectuera simplement.<br/>
+  Pour utiliser ce lecteur HTML5, vous devez utiliser la balise <strong>&lt;audio&gt;</strong>. Cette balise a été implanté dans le HTML5 afin de faciliter la lecture de fichier musicaux ou sonore.</p>
+  <p name="doc">Cependant, la compatibilité pose souvent problème. Dans ce cas précis, suivant les principaux navigateurs compatible avec la balise &lt;audio&gt;, ils ne seront pas tous capables de lire les mêmes TYPE de fichier audio. Le format .mp3 est reconnu et lu par Chrome ou Edge mais pas par Firefox .<br/>
+  Si vous regardez le code ci-dessous, vous remarquerez qu’il n’y a pas UNE mais TROIS sources de formats différents. C’est pour être sur qu'un maximum de navigateur reconnaitra et lira bien votre fichier. Cela demande de manipuler le fichier audio et de le convertir dans différents formats, mais de cette facon, vous serez certain de sa compatibilité. Nos trois formats sont donc :<br/>
+  -Le format mp3, <br/>
+  -Le format acc,<br/>
+  -Le format ogg(sans doute le format reconnu par le plus de navigateurs).</p>
+
+<img name="etape" src="..\MEDIAS\exemple_audio.png" alt="Veuillez mettre votre navigateur à jour."  title="Code pour inserer un fichier audio"/>
+
+
+
+<p name="not"> Voilà ce qu'on obtient.</p>
+
+          <center> 
+            <audio controls>
+                <source src="..\MEDIAS\Star Wars Imperial March Theme (8 Bit Remix Cover Version) - 8 Bit Universe.mp3" />
+                <source src="..\MEDIAS\Star Wars Imperial March Theme (8 Bit Remix Cover Version) - 8 Bit Universe.acc" />
+                <source src="..\MEDIAS\Star Wars Imperial March Theme (8 Bit Remix Cover Version) - 8 Bit Universe.ogg" />
+                Veuillez mettre votre navigateur à jour.
+            </audio>
+          </center>
+
+  <p name="doc">L'attribut controls est essentiel puisqu'il permet d'afficher les controleurs à l'utilisateur, il est aussi utile d'écrire un message après vos sources, celui-la s'affiche si la balise ne fonctionne pas ou si aucune des sources n'est utilisables.</p>
+
+
+<h2>-Les vidéos.</h2>
+
+
+  <p name="doc">La balise &lt;video&gt;, cousin de &lt;audio&gt; offre en HTML5 une solution simple, native pour les navigateurs pour l'intégration d'une vidéo dans une  page web. </p>
+  <p name="doc">A nouveau, la compatibilité peut poser problème, donc il faut toujours fournir un maximum de sources différentes si vous souhaiter une compatibilité sur le plus grand nombre de navigateur possible.<br/>
+  Le code ci-dessous présente trois sources de formats différents, parmis eux :<br/>
+  -Le format mp4,<br/>
+  -le format webm,<br/>
+  -le format ogv.
+
+  <img name="etape" src="..\MEDIAS\exemple_video.png" alt="Veuillez mettre votre navigateur à jour."  title="Code pour inserer un fichier vidéo"/>
+
+  <p name="not"> Voilà ce qu'on obtient.</p>
+
+
+    <video width="540" height="340" controls="controls">
+        <source src="..\MEDIAS\knuckles sings.mp4" />
+        <source src="..\MEDIAS\knuckles sings.webm" />
+        <source src="..\MEDIAS\knuckles sings.ogv" />
+      Veuillez mettre votre navigateur à jour.
+    </video>
+
+<p name="doc">
+
+  L'attribut <strong>controls</strong> donne accès aux contrôles de lecture (boutons de navigation, volume, etc, selon les possibilités du navigateur), ou les masque s'il est omis.<br/>
+  L'attribut <strong>preload="auto"</strong> permet de de spécifier au navigateur de débuter le téléchargement de la vidéo tout de suite, en anticipant sur le fait que l'utilisateur lira la vidéo.<br/>
+  L'attribut <strong>autoplay="true"</strong> comme son nom l'indique, permet de lancer la lecture automatiquement. Cela peut également être problématique avec une connexion à faible bande passante ou sur un terminal mobile. Cependant il est préférable de ne pas imposer ses choix à l'utilisateur... et à sa connexion internet.<br/>
+  L'attribut <strong>poster="image.jpg"</strong> permet d'indiquer une image à afficher par défaut dans l'espace réservé par la vidéo, avant que la lecture de celle-ci ne soit lancée.
+  <br/>
+  L'attribut <strong>loop</strong> indique que la lecture doit s'effectuer en boucle.</p>
+
+<a name="fleche" href="Medias.html"><img name="fleche" src="..\MEDIAS\retour.png" alt="Veuillez mettre à jour votre navigateur." title="Retour"/></a>
+
+
+    </body>
+</html>

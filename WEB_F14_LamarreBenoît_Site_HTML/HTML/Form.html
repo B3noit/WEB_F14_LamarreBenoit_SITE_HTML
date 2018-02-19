@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+      <link rel="shortcut icon" type="image/x-icon" href="..\MEDIAS\icone.png"/>
+      <link rel="stylesheet" type="text/css" href="..\CSS\ACCUEIL.css">
+	  <title>IZZY WEB (Formulaires)</title>
+    </head>
+    
+    <body>
+    
+        <header>
+        	<h1 name="grostitre">IZZY WEB<h1>
+        	<a href="ACCUEIL.html#INDEX"><img src="..\MEDIAS\menu.png" alt="Veuillez mettre à jour votre navigateur." title="Retourner à l'INDEX."/></a>
+        </header>
+
+<h1 name="titre">- LES FORMULAIRES</h1>
+  <h2>-Qu'est-ce qu'un formulaire ?</h2>
+
+
+  <p name="doc">
+    Le formulaire est compris entre les balises FORM.<br/>
+    Un formulaire demande une multitude de données à l’utilisateur par le biais de différentes balises. <br/>
+    Les formulaires interactifs permettent aux auteurs de pages Web de doter leur page web d'éléments interactifs permettant par exemple un dialogue avec les internaute, à la manière des coupons-réponse présents dans certains magazines.
+    Le lecteur saisit des informations en remplissant des champs ou en cliquant sur des boutons, puis appuie sur un bouton de soumission (submit) pour l'envoyer.</p>
+
+  <h2>-La balise FORM</h2>
+
+
+  <p name="doc">
+Les formulaires sont délimités par la balise &lt;FORM&gt; ... &lt;/FORM&gt;, une balise qui permet de regrouper plusieurs éléments de formulaire (boutons,champs de saisie,...) et qui possède les attributs obligatoires suivants : 
+<strong>METHOD</strong> indique sous quelle forme seront envoyées les réponses « POST » est la valeur qui correspond à un envoi de données stockées dans le corps de la requête, tandis que « GET » correspond à un envoi des données codées dans l'URL, et séparées de l'adresse du script par un point d'interrogation. <strong>ACTION</strong> indique l'adresse d'envoi et enfin, l'attribut <strong>ENCTYPE</strong> spécifie comment les données du formulaire sont traitées lorsqu'elles sont envoyées.</p>
+
+  <img name="etape" src="..\MEDIAS\form.png" alt="Veuillez mettre votre navigateur à jour."  title="Balise Form "/>
+
+
+<h2>-Quelques balises.</h2>
+
+<p name="doc">La balise input est à la base de nombreuses zones de saisies différentes, elle permet à l'utilisateur d'entré des informations.</p>
+
+  <img name="etape" src="..\MEDIAS\input.png" alt="Veuillez mettre votre navigateur à jour."  title="Code pour inserer un input"/>
+    <p> Voilà ce qu'on obtient.</p>
+  <input type="text" name=input1 size=50 placeholder="Le placeholder permet d'avoir du texte écrit pardéfaut"/>
+
+  <p name="doc">La balise textarea crée une zone saisie similaire, mais dont on peut choisir la taille avec l'attribut rows, dans cet exemple l'attribut autofocus permet de placer la souris de l'utilisateur directement sur cette zone de saisie. </p>
+
+    <img name="etape" src="..\MEDIAS\textarea.png" alt="Veuillez mettre votre navigateur à jour."  title="Code pour inserer un input"/>
+    <p> Voilà ce qu'on obtient.</p>
+
+  <textarea placeholder="aussi un placeholder" autofocus rows="4"></textarea>
+
+  <p name="doc">La balise select propose une liste d'items sélectionable par l'utilisateur, l'attribut size permet de définir le nombre d'items afficher dans la balise.
+  </p>
+    <img name="etape" src="..\MEDIAS\selected.png" alt="Veuillez mettre votre navigateur à jour."  title="Code pour inserer un input"/>
+    <p> Voilà ce qu'on obtient.</p>
+  <select size="3">
+          <option value> foot </option>
+          <option value> rugby </option>
+          <option value> tennis </option>
+          <option selected value> basket </option>
+          <option value> boxe </option>
+  </select>
+
+<p name="doc">On peut créer des "champs" grâce à la balise fieldset, utile pour créer des champs d'inscription, de création de compte.</p>
+    <img name="etape" src="..\MEDIAS\fieldset.png" alt="Veuillez mettre votre navigateur à jour."  title="Code pour inserer un input"/>
+    <p> Voilà ce qu'on obtient.</p>
+<fieldset>
+   <legend>Légende</legend>
+     Pseudo : <input type="text" name="pseudo"/><br/>
+       Mail : <input type="text" name="mail" required/><br/>
+   Site web : <input type="text" name="adresse"/><br/>
+</fieldset>
+
+
+<a name="fleche" href="Form.html"><img name="fleche" src="..\MEDIAS\retour.png" alt="Veuillez mettre à jour votre navigateur." title="Retour"/></a>
+
+    </body>
+</html>
